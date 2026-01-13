@@ -30,14 +30,14 @@ function Footer() {
                         </div>
 
                         <p className="text-slate-400 leading-relaxed text-sm max-w-xs font-medium">
-                            Building the digital infrastructure for the world's leading universities and brands. Where obsessive craft meets automated scale.
+                            Building the digital infrastructure for the world&apos;s leading universities and brands. Where obsessive craft meets automated scale.
                         </p>
 
                         <div className="flex gap-3">
                             {[LinkedinIcon].map((Icon, i) => (
-                                <a key={i} href="#" className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-navy-900 hover:border-transparent transition-all duration-300 group">
+                                <Link key={i} href="https://in.linkedin.com/company/alpha-dezine" target='_blank' className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:bg-white hover:text-navy-900 hover:border-transparent transition-all duration-300 group">
                                     <Icon size={18} />
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>
