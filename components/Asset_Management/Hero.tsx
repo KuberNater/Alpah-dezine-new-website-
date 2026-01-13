@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
                 </div>
 
                 <Image
-                    src={"/images/asset-management/01 1.webp"}
+                    src={"/images/asset-management/01 copy.png"}
                     alt='Creative asset management'
                     width={1200}
                     height={900}
