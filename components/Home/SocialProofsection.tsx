@@ -95,7 +95,7 @@ function SocialProofsection() {
                                                 <img
                                                     src={TESTIMONIALS[activeIndex].image}
                                                     alt={TESTIMONIALS[activeIndex].author}
-                                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                                    className="w-full h-full object-cover transition-all duration-700"
                                                 />
                                             </div>
                                             {/* Author info below image on mobile */}

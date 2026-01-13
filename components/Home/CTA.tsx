@@ -31,7 +31,7 @@ export const CTA: React.FC = () => {
               Not sure what you need? Let’s have a conversation about your specific challenges.
             </p>
 
-            <Button asChild className="w-full cursor-pointer py-8 bg-transparent text-xl border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/5 hover:border-white/40 transition-all mt-auto">
+            <Button asChild className="w-full cursor-pointer py-8 bg-primary text-xl text-white border border-border font-bold rounded-xl   transition-all mt-auto">
               <Link href="/contact-us">
                 Get in Touch
               </Link>

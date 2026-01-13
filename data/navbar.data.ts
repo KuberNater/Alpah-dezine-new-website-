@@ -5,7 +5,7 @@ export const NavbarData: IRedirectLinks[] = [
         name: 'How We Help',
         services: [
             {
-                name: 'DevOps',
+                name: 'DevOps & Software Development',
                 href: '/devops'
             },
             {
@@ -13,7 +13,7 @@ export const NavbarData: IRedirectLinks[] = [
                 href: '/collegiate-licensing'
             },
             {
-                name: 'AI Agent Development',
+                name: 'AI Agent Deployment',
                 href: '/ai-agent-development'
             },
             {
