@@ -1,0 +1,46 @@
+trigger:
+- alpha-dezine-new-website
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '22.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm ci
+    npm run build
+  displayName: 'Build NextJS application and compile TypeScript server'
+
+- task: CopyFiles@2
+  displayName: 'Copy deployment files'
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
+    Contents: |
+      public/**
+      package.json
+      package-lock.json
+      web.config
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    CleanTargetFolder: true
+    
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
+    Contents: |
+      **
+      !package.json
+      !package-lock.json
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    OverWrite: true
+    retryCount: '1'
+ 
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish lightweight build artifacts'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'AlphaNewWebApp'
+    publishLocation: 'Container'
