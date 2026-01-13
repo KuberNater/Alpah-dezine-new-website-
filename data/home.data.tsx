@@ -88,7 +88,7 @@ export const logos: ILogos[] = [
     },
     {
         name: "Nordic Resort",
-        url: "images/marquee/nordicresort Color.svg"
+        url: "images/marquee/nordicresort color.svg"
     },
     {
         name: "Quick Intuit",
