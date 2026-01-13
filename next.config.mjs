@@ -11,7 +11,6 @@ const nextConfig = {
       },
     ],
   },
-  distDir: 'dist',
   reactStrictMode: false,
   output: 'standalone'
 };
