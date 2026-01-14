@@ -316,7 +316,7 @@ export const stats: StatCardProps[] = [
 export const TESTIMONIALS: TestimonialType[] = [
     {
         quote: "We couldn’t ask for a better development partner than Alpha. They take the time to understand our unique, often complex business needs, and approach every challenge with enthusiasm and expertise. They’re responsive, knowledgeable, and always bring a positive, solution-focused attitude to every project",
-        author: "Steve Brown",
+        author: "Steven Brown",
         role: "President of The CSI Group",
         company: "The CSI Group",
         image: "images/testimonials/Steve-color.webp",
@@ -337,7 +337,7 @@ export const TESTIMONIALS: TestimonialType[] = [
     },
     {
         quote: "Working with Alpha Dezine has been an exceptional experience. For over 10 years, they have been a trusted partner in our business, helping us streamline operations, improve efficiency, and develop new processes that have made a lasting impact. Their team is knowledgeable, proactive, and an absolute pleasure to work with. They are a true collaborator in driving our continued success.",
-        author: "Maryellen",
+        author: "Maryellen M. Halloran",
         role: "VP OF OPERATIONS",
         company: "JARDINE",
         image: "images/testimonials/website-testimonial-pic.webp",
