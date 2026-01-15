@@ -10,6 +10,7 @@ type Card = {
     name: string;
     designation: string;
     content: React.ReactNode;
+    imageUrl:string;
 };
 
 export const CardStack = ({
