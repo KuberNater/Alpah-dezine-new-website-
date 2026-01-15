@@ -23,10 +23,7 @@ function Footer() {
                     <div className="lg:col-span-4 space-y-8">
                         {/* Logo */}
                         <div className="flex items-center gap-2 text-foreground">
-                            <svg width="160" height="36" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <text x="0" y="28" fontFamily="Manrope, sans-serif" fontWeight="800" fontSize="32" letterSpacing="-1.5" fill="currentColor">alphadezine</text>
-                                <circle cx="176" cy="12" r="2" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.6" />
-                            </svg>
+                            <img className='max-w-[190px] w-full' src="/images/Alpha Logo 01.svg" alt="alpha dezine logo" />
                         </div>
 
                         <p className="text-slate-400 leading-relaxed text-sm max-w-xs font-medium">

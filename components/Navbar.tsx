@@ -43,17 +43,15 @@ function Navbar() {
     }, [mobileMenuOpen]);
 
     return (
-        <nav className={cn('fixed top-0 landing z-999 max-w-6xl transition-all duration-500 ease-in-out',
+        <nav className={cn('fixed top-0 landing z-999 max-w-7xl transition-all duration-500 ease-in-out',
             isScrolled ?
                 'backdrop-blur-md bg-white/50 dark:bg-navy-950/40 mt-3 sm:mt-4 lg:mt-5 py-2 sm:py-3 border rounded-full border-border shadow-lg inset-x-0 mx-4 sm:mx-6 lg:inset-x-auto lg:left-1/2 lg:-translate-x-1/2 lg:mx-0 lg:w-full'
                 : 'bg-transparent mt-2 border-b border-transparent py-3 left-1/2 -translate-x-1/2 w-full'
         )}>
-            <MaxWidth className={cn('flex items-center justify-between w-full')}>
+            <MaxWidth className={cn('flex items-center justify-between w-full px-4')}>
                 {/* Logo  */}
-                <Link href="/" className="flex w-fit items-center gap-2 cursor-pointer  group relative z-10">
-                    <svg width="190" height="36" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#0d3c75] dark:text-white transition-colors duration-300 w-[140px] sm:w-[160px] lg:w-[190px]">
-                        <text x="0" y="28" fontFamily="Manrope, sans-serif" fontWeight="800" fontSize="32" letterSpacing="-1.5" fill="currentColor">alphadezine</text>
-                    </svg>
+                <Link href="/" className="flex w-fit items-center gap-2 cursor-pointer  group relative z-10 me-2">
+                    <img className='max-w-[190px] w-full' src="/images/Alpha Logo 01.svg" alt="alpha dezine logo" />
                 </Link>
 
                 {/* Desktop Links - Hidden on mobile/tablet */}
