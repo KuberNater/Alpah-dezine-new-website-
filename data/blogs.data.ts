@@ -26,6 +26,17 @@ export const posts: IBlogPostCard[] = [
         image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop',
         slug: '/what-is-collegiate-licensing'
     },
+    {
+        title: 'The ABCs of AI: LLMs, RAG, and Agents Explained',
+        excerpt: 'Tired of tech-bro jargon? We demystify the three pillars of modern AI—LLMs, RAG, and Agents—using a simple analogy.',
+        category: 'AI Agent',
+        author: 'Dr. Marcus Webb',
+        date: 'Jan 24, 2025',
+        readTime: '8 min',
+        image: '/images/ai-blog.webp',
+        featured: true,
+        slug: 'the-abc-of-ai'
+    },
     // {
     //     title: 'The Cost of Imprecision: A Financial Breakdown',
     //     excerpt: 'We analyzed $125M in industry losses. The data reveals that 80% of penalties stem from simple version control errors.',
