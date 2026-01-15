@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
+import Image from "next/image";
 
 let interval: any;
 
