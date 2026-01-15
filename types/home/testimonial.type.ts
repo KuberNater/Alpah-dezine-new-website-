@@ -1,18 +1,13 @@
 import { z } from "zod";
 import { LucideIcon } from "lucide-react";
-import React from "react";
 
 const lucideIconSchema = z.any() as z.ZodType<LucideIcon>;
 
-const reactNodeSchema = z.any() as z.ZodType<React.ReactNode>;
-
 const TESTIMONIAL_VALIDATION = z.object({
-    quote: z.string(),
-    author: z.string(),
-    role: z.string(),
-    company: z.string(),
-    image: z.string(),
-    years: z.string().optional()
+    id:z.number(),
+    name:z.string(),
+    designation:z.string(),
+    content:z.string(),
 });
 
 const COLOR_STYLE_VALIDATION = z.object({
