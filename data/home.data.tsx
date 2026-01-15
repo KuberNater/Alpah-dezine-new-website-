@@ -319,36 +319,42 @@ export const TESTIMONIALS: TestimonialType[] = [
         content: "We couldn’t ask for a better development partner than Alpha. They take the time to understand our unique, often complex business needs, and approach every challenge with enthusiasm and expertise. They’re responsive, knowledgeable, and always bring a positive, solution-focused attitude to every project",
         name: "Steve Brown",
         designation: "President of The CSI Group",
+        imageUrl: "/images/testimonials/Steve-color.webp",
     },
     {
         id: 2,
         content: "From a Marketing Director’s perspective, finding a development partner who truly understands both the business and brand side of what we do is rare. Alpha not only takes the time to learn our unique processes but approaches every challenge with insight, a positive attitude, and solutions. Their responsiveness and collaborative spirit make them an invaluable part of our extended team",
         name: "Lori McKnight",
         designation: "Marketing Director",
+        imageUrl: "/images/testimonials/LORI-COLOR.webp",
     },
     {
         id: 3,
         content: "Alpha Dezine has been Nordic’s trusted technology and artwork partner for over 13 years. Yates and his team never tell us ‘no’—they simply get it done. Their technical expertise, attention to detail, and ability to turn artwork around quickly have been essential to our growth. Whether it’s complex setups, new technology needs, or last-minute challenges, Alpha delivers with professionalism and consistency every time. We truly value this partnership and look forward to many more years of success together.",
         name: "Mark Kindberg",
         designation: "CEO & President",
+        imageUrl: "/images/testimonials/MARK-COLOR.webp",
     },
     {
         id: 4,
         content: "Working with Alpha Dezine has been an exceptional experience. For over 10 years, they have been a trusted partner in our business, helping us streamline operations, improve efficiency, and develop new processes that have made a lasting impact. Their team is knowledgeable, proactive, and an absolute pleasure to work with. They are a true collaborator in driving our continued success.",
         name: "Maryellen",
         designation: "VP OF OPERATIONS",
+        imageUrl: "/images/testimonials/website-testimonial-pic.webp",
     },
     {
         id: 5,
         content: "Alpha Dezine has been an amazing partner for us. They handle a large volume of our production artwork and always deliver great work. We wouldn’t have been able to scale and support our sales without them. The custom tools and programs they’ve built have made our process smoother for both us and our customers.",
         name: "Tyler Silva",
         designation: "PRESIDENT",
+        imageUrl: "/images/testimonials/TYLER-COLOR.webp",
     },
     {
         id: 6,
         content: 'We are incredibly grateful for our partnership with Alpha Design. Their team has consistently gone above and beyond to support us with quick turnarounds on designs, high-quality web images, and a wide range of administrative needs such as licensing submissions.Working with Alpha Design has truly felt like having an extension of our own team.We appreciate their dedication, attention to detail, and the seamless collaboration that makes every project run smoothly.Thank you to the entire Alpha Design team in India for being such a valuable and trusted partner!',
         name: "Anonymous",
         designation: "VP at Large Collegiate Licensee",
+        imageUrl: "/images/testimonials/website-testimonial-pic.webp",
     },
 ];
 

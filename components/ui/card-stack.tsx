@@ -1,6 +1,6 @@
-"use client";
-import { useEffect, useState } from "react";
-import { motion } from "motion/react";
+'use client';
+import { useEffect, useState } from 'react';
+import { motion } from 'motion/react';
 
 let interval: any;
 
@@ -12,10 +12,10 @@ type Card = {
 };
 
 export const CardStack = ({
-                              items,
-                              offset,
-                              scaleFactor,
-                          }: {
+    items,
+    offset,
+    scaleFactor,
+}: {
     items: Card[];
     offset?: number;
     scaleFactor?: number;
@@ -40,16 +40,16 @@ export const CardStack = ({
     };
 
     return (
-        <div className="relative h-88 w-full md:h-88">
+        <div className='relative h-88 w-full md:h-88'>
             {cards.map((card, index) => {
                 return (
                     <motion.div
                         key={card.id}
-                        className="absolute bg-white dark:bg-black w-[90vw] md:w-[600px] h-80 md:h-80 rounded-3xl p-6 shadow-xl border border-neutral-200 dark:border-white/10 shadow-black/10 dark:shadow-white/5 flex flex-col justify-between"
+                        className='absolute bg-white dark:bg-black w-[90vw] md:w-[600px] h-80 md:h-80 rounded-3xl p-6 shadow-xl border border-neutral-200 dark:border-white/10 shadow-black/10 dark:shadow-white/5 flex flex-col gap-3'
                         style={{
-                            transformOrigin: "top center",
-                            left: "50%",
-                            x: "-50%", // Use Framer Motion x for translation to avoid conflicts
+                            transformOrigin: 'top center',
+                            left: '50%',
+                            x: '-50%', // Use Framer Motion x for translation to avoid conflicts
                         }}
                         animate={{
                             top: index * -CARD_OFFSET,
@@ -57,16 +57,27 @@ export const CardStack = ({
                             zIndex: cards.length - index, //  decrease z-index for the cards that are behind
                         }}
                     >
-                        <div className="font-normal text-neutral-700 dark:text-neutral-200 text-sm md:text-base leading-relaxed line-clamp-6 md:line-clamp-none">
-                            {card.content}
+                        <div className='flex items-center gap-4'>
+                            <div className='size-12 rounded-full overflow-hidden'>
+                                <Image
+                                    src={card.imageUrl}
+                                    alt={card.name}
+                                    width={100}
+                                    height={100}
+                                    className='w-full h-full object-cover'
+                                />
+                            </div>
+                            <div className='flex flex-col items-start'>
+                                <p className='text-primary font-bold '>
+                                    {card.name}
+                                </p>
+                                <p className='text-neutral-400 font-normal dark:text-neutral-200 text-sm'>
+                                    {card.designation}
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <p className="text-primary font-bold ">
-                                {card.name}
-                            </p>
-                            <p className="text-neutral-400 font-normal dark:text-neutral-200 text-sm">
-                                {card.designation}
-                            </p>
+                        <div className='font-normal text-neutral-700 dark:text-neutral-200 text-sm md:text-base leading-relaxed line-clamp-6 md:line-clamp-none'>
+                            {card.content}
                         </div>
                     </motion.div>
                 );

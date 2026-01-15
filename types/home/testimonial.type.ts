@@ -8,6 +8,7 @@ const TESTIMONIAL_VALIDATION = z.object({
     name:z.string(),
     designation:z.string(),
     content:z.string(),
+    imageUrl: z.string()
 });
 
 const COLOR_STYLE_VALIDATION = z.object({
